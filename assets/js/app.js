@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 8080;
 
 
 
+
+// Start server and logging message on which port it is listening
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
   });
