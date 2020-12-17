@@ -11,15 +11,15 @@ const PORT = process.env.PORT || 8080;
 
 const index = "../../index.html";
 const notes = "../../notes.html";
-console.log(index);
+
+app.get("/notes", function (req, res) {
+    res.sendFile(path.join(__dirname, notes));
+});
 
 app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, index));
 });
 
-app.get("/notes", function (req, res) {
-    res.sendFile(path.join(__dirname, notes));
-});
 
 
 // Start server and logging message on which port it is listening
