@@ -9,11 +9,16 @@ const app = express();
 // Sets an initial port. We"ll use this later in our listener
 const PORT = process.env.PORT || 8080;
 
-// const index = "../../../index.html";
-// console.log(index);
+const index = "../../index.html";
+const notes = "../../notes.html";
+console.log(index);
 
 app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "/../../index.html"));
+    res.sendFile(path.join(__dirname, index));
+});
+
+app.get("/notes", function (req, res) {
+    res.sendFile(path.join(__dirname, notes));
 });
 
 
