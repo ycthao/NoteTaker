@@ -1,6 +1,7 @@
 // DEPENDENCIES
 // npm packages to install
 const express = require("express");
+const path = require("path");
 
 // Tells node that we are creating an "express" server
 const app = express();
@@ -8,11 +9,11 @@ const app = express();
 // Sets an initial port. We"ll use this later in our listener
 const PORT = process.env.PORT || 8080;
 
-const index = "../index.html";
-console.log(index);
+// const index = "../../../index.html";
+// console.log(index);
 
 app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, index));
+    res.sendFile(path.join(__dirname, "/../../index.html"));
 });
 
 
