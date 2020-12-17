@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ycthao/NoteTaker/issues"
   },
-  "homepage": "https://github.com/ycthao/NoteTaker#readme"
+  "homepage": "https://github.com/ycthao/NoteTaker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
