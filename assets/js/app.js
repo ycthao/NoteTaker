@@ -20,6 +20,16 @@ app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, index));
 });
 
+app.post("/api/notes", function(req, res) {
+    notes.push(req.body);
+});
+
+
+
+
+
+
+
 
 
 // Start server and logging message on which port it is listening
