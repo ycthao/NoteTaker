@@ -12,6 +12,10 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// setting an array for notes
+let notes = [];
+let id = 0;
+
 
 
 // Sets an initial port. We"ll use this later in our listener
@@ -24,39 +28,28 @@ app.get("/notes", function (req, res) {
     res.sendFile(path.join(__dirname, notesURL));
 });
 
-
-
-app.post("/api/notes", function(req, res) {
-    let notes = [];
-    let newNote = req.body;
-
-    notes = JSON.parse(fs.readFileSync(path.join(__dirname, "/api/notes.json")));
-
-    notes.push(newNote);
-
-    fs.writeFile(path.join(__dirname, "/api/notes.json"), notes, (err) => {
-        if (err)
-        {
-            console.log(err);
-        } else {
-            console.log("Saved");
-        }
-
-        res.send();
-    })
-
-
-});
-
-
-
-
-
-
-
 app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, indexURL));
 });
+
+
+
+
+app.post("/api/notes", function(req, res) {
+    let newNote = req.body;
+
+    notes.push(newNote);
+
+    res.json(newNote);
+
+});
+
+
+
+
+
+
+
 
 // Start server and logging message on which port it is listening
 app.listen(PORT, function () {
