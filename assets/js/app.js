@@ -2,7 +2,9 @@
 // npm packages to install
 const express = require("express");
 const path = require("path");
-const notes = require("../../api/notes");
+const fs = require("fs");
+const util = require("util");
+//const notes = require("../../api/notes");
 
 // Tells node that we are creating an "express" server
 const app = express();
@@ -25,10 +27,24 @@ app.get("/notes", function (req, res) {
 
 
 app.post("/api/notes", function(req, res) {
-    let newNotes = req.body;
-    console.log(newNotes);
-    notes.push(newNotes);
-    res.json(newNotes);
+    let notes = [];
+    let newNote = req.body;
+
+    notes = JSON.parse(fs.readFileSync(path.join(__dirname, "/api/notes.json")));
+
+    notes.push(newNote);
+
+    fs.writeFile(path.join(__dirname, "/api/notes.json"), notes, (err) => {
+        if (err)
+        {
+            console.log(err);
+        } else {
+            console.log("Saved");
+        }
+
+        res.send();
+    })
+
 
 });
 
