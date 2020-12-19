@@ -10,3 +10,7 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
+// Set up express app
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
