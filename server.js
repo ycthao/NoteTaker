@@ -14,3 +14,5 @@ const PORT = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+let note = [];
+let id = 0;
