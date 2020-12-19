@@ -1,13 +1,13 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple website for a user to write, save and delete notes",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Yeem Chij Thao",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

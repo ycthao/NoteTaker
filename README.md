@@ -21,11 +21,11 @@ A simple website that let the user write notes, save and delete them as needed.
 ## Installation 
 
 - No installation needed, just go to Heroku link provided:
-- 
+- https://mysterious-refuge-73606.herokuapp.com/
 
 ## Usage 
 
-![image](https://github.com/ycthao/ReadMeGenerator/blob/main/Images/readmegeneratorgif.gif?raw=true)
+
 
 ## Contributing 
 
