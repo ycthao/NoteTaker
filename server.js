@@ -18,22 +18,22 @@ let note = [];
 let id = 0;
 
 // Defining link
-const noteURL = "./public/notes.hml";
-const indexURL = "./public/indext.hml";
+const noteURL = "/public/notes.html";
+const indexURL = "/public/index.html";
 
 // Defining route
-app.get("/notes", function(req, res) {
+app.get("/notes", function (req, res) {
     res.sendFile(path.join(__dirname, noteURL));
-  });
+});
 
-  app.get("*", function(req, res) {
+app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, indexURL));
-  });
+});
 
 
 
 // Start server to begin linstening
-app.listen(PORT, function() {
+app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
-  });
-  
+});
+
