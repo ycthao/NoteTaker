@@ -1,23 +1,14 @@
 {
-  "name": "notetaker",
+  "name": "note-taker",
   "version": "1.0.0",
-  "description": "App that will save note, read and delete note taken by user.",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ycthao/NoteTaker.git"
-  },
-  "author": "Yeem Chij Thao",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ycthao/NoteTaker/issues"
-  },
-  "homepage": "https://github.com/ycthao/NoteTaker#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "util": "^0.12.3"
+    "express": "^4.16.4"
   }
 }
