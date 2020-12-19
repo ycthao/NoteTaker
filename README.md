@@ -4,7 +4,7 @@
 
 ## Description 
 
-The purpose of this README Generator is to help a user to create a simple README.md.  The README.md will be filled by running a node index.js and answering the questions that are asked.
+A simple website that let the user write notes, save and delete them as needed.
 
 ## Table of Contents 
 
@@ -20,10 +20,8 @@ The purpose of this README Generator is to help a user to create a simple README
 
 ## Installation 
 
-- This apps will require node.js and requires npm inquirer package.
-- To download node.js, go to https://nodejs.org/en/ and click download on the current version.
-- Download index.js or clone repository from https://github.com/ycthao/ReadMeGenerator
-- In Visual Studio Code, install dependencies from the package.json file.
+- No installation needed, just go to Heroku link provided:
+- 
 
 ## Usage 
 
@@ -41,7 +39,7 @@ None
 
 MIT License
 
-Copyright (c) [2020] [Yeem Chij Thao]
+Copyright (c) 2020 Yeem Chij Thao
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
