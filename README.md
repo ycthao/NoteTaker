@@ -25,7 +25,7 @@ A simple website that let the user write notes, save and delete them as needed.
 
 ## Usage 
 
-
+![image](https://github.com/ycthao/NoteTaker/blob/main/Images/notetakergif.gif?raw=true)
 
 ## Contributing 
 
