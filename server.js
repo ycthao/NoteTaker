@@ -16,3 +16,16 @@ app.use(express.json());
 
 let note = [];
 let id = 0;
+
+// Defining link
+const noteURL = "./public/notes.hml";
+const indexURL = "./public/indext.hml";
+
+// Defining route
+app.get("/notes", function(req, res) {
+    res.sendFile(path.join(__dirname, noteURL));
+  });
+
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, indexURL));
+  });
